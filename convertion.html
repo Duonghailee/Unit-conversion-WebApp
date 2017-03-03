@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Conversion center</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="jquery.autocomplete.min.js"></script>
+</head>
+
+<body>
+	<div class="" id="page-content-wrapper">
+		<div class="container-fluid">
+
+			<div class="col-lg-12">
+				<a href="#" class="btn btn-success" id="menu-toggle">Conversion list</a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- CURRENCY SECTION -->
+	<h1>currency conversions</h1>
+	<div id="searchfield">
+		<p>Please choose currency</p>
+		<form id="currency_type">
+			<input type="text" class="biginput" id="autocomplete_from" autocomplete="off" placeholder="USD" /> →
+			<input type="text" class="biginput" id="autocomplete_to" autocomplete="off" placeholder="EUR" />
+		</form>
+	</div>
+	<div id="result">
+		<p>Please enter value</p>
+		<form id="currency_form">
+			<input type="text" class="biginput" id="inputCurrency" autocomplete="off" placeholder="0" /> →
+			<a href="#" class="btn btn-success" id="convert">Convert</a>
+			<input type="text" class="biginput" id="outputCurrency" autocomplete="off" />
+		</form>
+	</div>
+
+	<!-- LENGTH SECTION -->
+	<h2>length conversions</h1>
+    <form id="lengthConverter">
+		<select name="converterType"  class="form-control" style="width: 340px;">
+			<option value="length">Length</option>
+			<option value="weight" disabled="disabled">Weight</option>
+			<option value="temp" disabled="disabled">Temperature</option>
+			<option value="pressure" disabled="disabled">Pressure</option>
+		</select>
+		
+		<div>
+			<input type="text" placeholder="0" id="inputUnitValue" style="width: 150px;"/>
+			<button href="#" class="btn btn-success" id="convertLength">=</button>
+			<input type="text" id="outputUnitValue" placeholder="0" style="width: 150px;" />
+			
+		</div>
+		<div>
+			<select id="inputUnit" style="width: 150px;">
+				<option value='inch'>Inch</option>
+				<option value='cm' >Centimeter</option>
+			</select>
+			<a href="#" class="btn btn-success" id="convert" style="visibility: hidden;">&nbsp;&nbsp;</a>
+			<select id="outputUnit" style="width: 150px;">
+				<option value='inch'>Inch</option>
+				<option value='cm' >Centimeter</option>
+			</select>
+		</div>
+	</form>
+	
+	
+
+</select>
+			 
+
+ 	 </div>
+	  
+		<script type="text/javascript" src="script.js"></script>
+	  
+</body>
+</html>
